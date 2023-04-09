@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html>
+ <!-- !DOCTYPE html declaration defines that this document is an HTML5 document -->
+
+<head>
+ <!--  head element contains meta information about the HTML page-->
+  <title>Basic Web Page</title>
+  <!-- which is shown in the browser's title bar or in the page's tab -->
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <style>
+   ul {
+  list-style-type:;
+  margin: 20;
+  padding: 30;
+  overflow:;
+  background-color: #987432;
+}
+
+li {
+  float:;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+  </style>
+</head>
+
+<!--create your own favicon on sites like https://www.favicon.cc. -->
+<body >
+  <hr>
+<ul style="list-style-type:circle;">
+  <!-- type circle square or disc -->
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+<hr>
+<ol type="i">
+  <!-- type="1"	The list items will be numbered with numbers (default)
+type="A"	The list items will be numbered with uppercase letters
+type="a"	The list items will be numbered with lowercase letters
+type="I"	The list items will be numbered with uppercase roman numbers
+type="i"	The list items will be numbered with lowercase roman numbers 
+-->
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+<hr>
+  <!-- dl Defines a description list -->
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+<hr>
+  <h1> list start from 50</h1>
+  <ol start="50">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+  
+  <hr>
+  <h1> nested list </h1>
+  <ol>
+  <li>Coffee</li>
+  <li>Tea
+    <ol>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ol>
+  </li>
+  <li>Milk</li>
+</ol>
+</body>
+</html>
