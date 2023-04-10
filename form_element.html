@@ -1,0 +1,129 @@
+<!DOCTYPE html> 
+<html lang="en-us"">
+ <!-- !DOCTYPE html declaration defines that this document is an HTML5 document -->
+
+<head>
+ <!--  head element contains meta information about the HTML page-->
+  <title>Basic Web Page</title>
+  <!-- which is shown in the browser's title bar or in the page's tab -->
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <meta http-equiv="refresh" content="100">
+  <meta name="author" content="Amira Galal">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <style>
+ </style>
+</head>
+
+<!--create your own favicon on sites like https://www.favicon.cc. -->
+<body >
+<h1> form is used to collect user input.</h1>
+<h3>The &lt;form&gt; Element</h3>
+<hr>
+
+
+<h3>The &lt;input&gt; Element</h3>
+<form action="/action_page.php" target="_blank"  method="post"  autocomplete="on" novalidate>
+<!--target to display the response that is received after submitting the form.-->
+<!--method="post" or "get" is defualt -->
+<!-- GET is good for non-secure data -->
+<!-- post the submitted form data is not shown in the URL, no size limitations -->
+<!--autocomplete="on" complete values based on values that the user has entered before.-->
+<!--  form-data (input) should not be validated when submitted. -->
+<em>input type="text"</em>
+<label for="fname">First name:</label>
+<input type="text">
+<hr>
+<em>select</em>
+<label for="cars">Choose a car:</label>
+<select id="cars" name="cars" size="4" multiple>
+  <!-- multiple attribute to allow the user to select more than one value: -->
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+<hr>
+<em>textarea</em>
+<textarea name="message" rows="10" cols="30">
+The cat was playing in the garden.
+</textarea>
+<hr>
+<em>button</em>
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+<hr>
+<em>input type="button"</em>
+<input type="button">
+</form>
+<hr>
+
+<h3>for attribute of the &lt;label&gt; tag should be equal to the id attribute of the <input> element to bind them together.</h3>
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+</form>
+<hr>
+
+
+<form>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label>
+</form>
+<hr>
+
+
+<form action="/action_page.php">
+  <fieldset>
+    <!--The <fieldset> element is used to group related data in a form. -->
+    <legend>Personalia:</legend>
+    <!-- <legend> element defines a caption for the <fieldset> element. -->
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+<hr>
+
+
+
+<form action="/action_page.php">
+  <input list="browsers">
+  <!-- <datalist> element specifies a list of pre-defined options for an <input> element. -->
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+</form>
+<hr>
+
+
+<form action="/action_page.php"
+oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  <!-- <output> element represents the result of a calculation -->
+  <input type="range" id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+
+
+</body>
+</html>
