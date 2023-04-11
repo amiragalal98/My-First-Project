@@ -1,1 +1,43 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>css tutorial</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Amira Galal">
+        <meta name="description" content="margin css">
+        <meta charset="UTF-8">
+        <style>
+            strong {
+                margin: 25px 50px 75px;
+                }
+                   div {
+                    width: 300px;
+                     margin: auto;
+                    border: 1px solid red;
+                    }
+                    p.ex1 {
+                    margin-left: inherit;
+                    }   
+        </style>
+    </head>
+    <body>
+        <h1>margin properties are used to create space around elements, outside of any defined borders.</h1>
+        <h3>CSS has properties for specifying the margin for each side of an element:</h3>
+        <p>margin-top</p>
+        <p>margin-right</p>
+        <p>margin-bottom</p>
+        <p>margin-left</p>
+        <h1>All the margin properties can have the following values:</h1>
+        <p><b>auto</b>- the browser calculates the margin</p>
+        <p><b>length</b>- specifies a margin in px, pt, cm, etc.</p>
+        <p><b>%</b>- specifies a margin in % of the width of the containing element</p>
+        <p><b>inherit</b>- specifies that the margin should be inherited from the parent element</p>
+        <strong>margin</strong><i>iiiiii</i> /* all four margins are 25px */
+        <div>
+        This div will be horizontally centered because it has margin: auto;
+        </div>
+        <div>
+        <p class="ex1">This paragraph has an inherited left margin (from the div element).</p>
+        </div>
+    </body>
+</html>
