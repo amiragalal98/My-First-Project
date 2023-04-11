@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<html lang="en-us"">
+<html lang="en-us">
  <!-- !DOCTYPE html declaration defines that this document is an HTML5 document -->
 
 <head>
@@ -7,13 +7,11 @@
   <title>Basic Web Page</title>
   <!-- which is shown in the browser's title bar or in the page's tab -->
   <meta name="viewport" content="width=device-width,initial-scale=1" >
-  <meta http-equiv="refresh" content="100">
   <meta name="author" content="Amira Galal">
   <meta name="description" content="Free Web tutorials">
   <meta name="keywords" content="HTML, CSS, JavaScript">
   <meta charset="UTF-8">
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Dropdown_menu.css">
   <style>
  </style>
 </head>
@@ -21,7 +19,7 @@
 <body >
 <div class="navigation">
   <div class="userBox">
-    <div class="imgBox"> <img src="img/girl.jpg" alt="girl photo"></div>
+    <div class="imgBox"> <img src="../img/girl.jpg" alt="girl photo"></div>
   </div>
   <p class="username">Amira Galal</p>
   <div class="menuToggle">
@@ -37,9 +35,9 @@
 </div>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script>
-  let menuToggle.querySelector('.menuToggle');
-  let navigation.querySelector('.navigation');
+<script> 
+  let menuToggle= document.querySelector('.menuToggle');
+  let navigation= document.querySelector('.navigation');
   menuToggle.onclick= function(){
     navigation.classList.toggle('active');
   }
