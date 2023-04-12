@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>css tutorial</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Amira Galal">
+        <meta name="description" content="padding css">
+        <meta charset="UTF-8">
+        <style>
+           div {
+            padding: 25px 50px 75px 100px;
+            /* top padding is 25px
+               right padding is 50px
+               bottom padding is 75px
+               left padding is 100px
+               */
+            }
+
+            .all {
+            padding: 25px;
+            /* all four paddings are 25px */
+            }
+             div{
+                border: 1px green solid
+             }
+             .width{
+                width: 500px;
+             }
+             .max-width{
+                max-width: 500px;
+             }
+
+
+             p.ex1 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: thin;
+}
+
+p.ex2 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: medium;
+}
+
+p.ex3 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: thick;
+}
+
+p.ex4 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: 4px;}
+
+  .offset {
+  margin: 30px;
+  border: 1px solid black;
+  outline: 1px solid red;
+  outline-offset: 15px;
+}
+        </style>
+    </head>
+    <body>
+        <h1>An outline is a line that is drawn around elements, OUTSIDE the borders</h1>
+        <h3>CSS has the following outline properties:</h3>
+        <p>outline-style</p>
+        <p>outline-color</p>
+        <p>outline-width</p>
+        <p>outline-offset</p>
+        <p>outline</p>
+
+
+        <h3>outline-style property specifies the style of the outline, value:</h3>
+        <p>outline-style: dotted</p>
+        <p>outline-style: dashed</p>
+        <p>outline-style: solid</p>
+        <p>outline-style: double</p>
+        <p>outline-style: groove</p>
+        <p>outline-style: ridge</p>
+        <p>outline-style: inset</p>
+        <p>outline-style: outset</p>
+        <p>outline-style: none</p>
+        <p>outline-style: hidden</p>
+
+
+        <h1>CSS Outline Width</h1>
+        <p>thin (typically 1px)</p>
+        <p>medium (typically 3px)</p>
+        <p>thick (typically 5px)</p>
+        <p>A specific size (in px, pt, cm, em, etc)</p>
+
+
+
+        <h2>The outline-width Property</h2>
+
+        <p class="ex1">A thin outline.</p>
+        <p class="ex2">A medium outline.</p>
+        <p class="ex3">A thick outline.</p>
+        <p class="ex4">A 4px thick outline.</p>
+
+
+
+
+        <h1><b>outline-offset</b> property adds space between an outline and the edge/border of an element.</h1>
+        <p class="offset">This paragraph has an outline 15px outside the border edge.</p>
+         
+        
+        
+    </body>
+</html>
